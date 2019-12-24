@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="col-x-12 col-sm-6 col-lg-4" ng-repeat="employee in employees">
+		<div class="panel panel-default employee-list-item">
+			<div class="panel-body">
+				<span class="icon-container"><i class="fa fa-3x fa-user"></i></span>
+				<span class="h4">{{employee.name.last}}, {{employee.name.first}}</span>
+				<a href="#employees/{{empoyee.id}}" class="btn btn-sm btn-info">
+					<i class="fa fa-eye"></i>View
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
